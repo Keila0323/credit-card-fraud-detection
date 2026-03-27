@@ -1,84 +1,66 @@
-credit-card-fraud-detection
-Exploratory analysis of 284,000+ credit card transactions to uncover fraud patterns using Python and Pandas.
+# Credit Card Fraud Detection
 
-Overview
-This project analyzes a real-world credit card transaction dataset to identify patterns associated with fraudulent activity. It focuses on understanding class imbalance, exploring transaction behavior, and highlighting statistical signals that differentiate legitimate transactions from fraud—skills directly relevant to risk monitoring and financial data analysis roles.
+EDA of 284,000+ credit card transactions to understand fraud patterns using Python and Pandas.
 
-Project Goals
-Load and explore a large-scale financial transaction dataset (284,000+ records).
+## Overview
 
-Quantify and visualize the extreme class imbalance between fraudulent and legitimate transactions.
+Analyze a real-world credit card dataset to:
+- Explore transaction behavior and class imbalance.
+- Highlight patterns that separate fraudulent and legitimate transactions.
+- Practice risk-focused data analysis relevant to fraud monitoring roles.
 
-Identify statistical patterns and anomalies in transaction amounts, frequency, and key features.
+## Project Goals
 
-Visualize fraud distribution and risk indicators using clear, readable charts.
+- Explore 284,807 credit card transactions and 30 anonymized features.
+- Quantify and visualize the extreme class imbalance (~0.17% fraud).
+- Analyze transaction amounts, time, and key features for fraud signals.
+- Create clear charts that communicate risk to non-technical audiences.
 
-Summarize insights in a way that supports practical fraud risk decisions.
+## Tech Stack
 
-Tools & Technologies
-Programming: Python (Pandas, NumPy, Matplotlib, Seaborn if used)
+- **Python:** Pandas, NumPy, Matplotlib, Seaborn  
+- **Environment:** VS Code  
+- **Methods:** Data cleaning, EDA, basic statistics, visualization  
 
-Environment: VS Code (or Jupyter Notebook, if applicable)
+## Dataset
 
-Techniques: Data cleaning and transformation, exploratory data analysis (EDA), basic statistical analysis, data visualization
+- **Source:** [Credit Card Fraud Detection — Kaggle (MLG-ULB)](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)  
+- 284,807 transactions · 492 fraud cases · 30 features  
 
-Dataset
-Source: Credit Card Fraud Detection — Kaggle (MLG-ULB)
+## Key Findings
 
-Size: 284,807 transactions, 492 fraud cases, 30 anonymized features
+- 73.6% of fraudulent transactions are under 100 units → likely “card testing” behavior.
+- Fraudulent transactions average 122.21 vs 88.29 for legitimate ones (~38% higher).
+- Fraud occurs throughout the timeline with no strong peak hours, so simple time rules are weak on their own.
 
-Characteristics: Highly imbalanced dataset where fraud represents roughly 0.17% of all transactions, reflecting real-world fraud detection challenges.
+## How to Run
 
-Key Findings
-Approximately 73.6% of fraudulent transactions are under 100 units in amount, suggesting deliberate “card testing” behavior before higher-value purchases.
-
-Fraudulent transactions have an average amount of about 122.21 compared with 88.29 for legitimate ones, a difference of roughly 38%.
-
-Fraud cases appear across the full transaction timeline without clear peak hours, indicating that simple time-based detection rules may not be effective on their own.
-
-(You can adjust the numbers or wording if you refine your analysis.)
-
-How to Run
-Clone the repository
-
-bash
+```bash
 git clone https://github.com/Keila0323/credit-card-fraud-detection.git
 cd credit-card-fraud-detection
-Set up the environment
-
-Python 3.9+ recommended
-
-Install dependencies (if you do not have a requirements.txt, list the packages in the README or create one):
-
-bash
 pip install pandas numpy matplotlib seaborn
-Download the dataset
+```
 
-Go to the Kaggle dataset page: “Credit Card Fraud Detection — MLG-ULB”.
+1. Download `creditcard.csv` from the Kaggle link above.  
+2. Place it in the project folder (same level as `credit_card_fraud_analysis.py`).  
+3. Run:
 
-Download creditcard.csv and place it in the project root (or in a data/ folder if your script/notebook expects that path).
+```bash
+python credit_card_fraud_analysis.py
+```
 
-Run the analysis
+4. Open the generated `.png` charts to view the results.
 
-Open credit_card_fraud_analysis.py in VS Code and run the script, or
+## Future Work
 
-If you have a notebook version, open it in Jupyter and run all cells in order.
+- Add a simple model (logistic regression / random forest).
+- Try resampling methods (SMOTE, undersampling, oversampling).
+- Evaluate with precision, recall, F1-score, and ROC–AUC.
+- Turn the analysis into a small dashboard or report.
 
-View results
+## About
 
-Plots and summary statistics will display in your environment.
+Data science student at Northeastern University with 12+ years in financial services (fraud monitoring, risk, and banking operations).
 
-If the script saves figures or tables, they will appear in the designated outputs/ or similar folder (you can mention the exact folder once you set it).
-
-Future Improvements
-Build and evaluate a simple classification model (e.g., logistic regression, random forest) to predict fraud.
-
-Experiment with resampling techniques (SMOTE, undersampling, oversampling) to address class imbalance.
-
-Add more advanced evaluation metrics (precision, recall, F1-score, ROC–AUC) tailored to fraud detection.
-
-Package the analysis into a reusable notebook or dashboard for non-technical stakeholders.
-
-About the Author
-Data science student at Northeastern University with over 12 years of experience in financial services, including fraud monitoring, risk analysis, and banking operations. This project combines hands-on analytics in Python with real-world domain expertise in detecting anomalies in financial transaction data.
+[GitHub Profile](https://github.com/Keila0323)
 🔗 [LinkedIn](#) | [GitHub Profile](https://github.com/Keila0323)
