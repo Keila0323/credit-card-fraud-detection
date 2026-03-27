@@ -20,7 +20,9 @@ This project analyzes a real-world credit card transaction dataset to identify p
 - Summarize findings in a way that supports real-world fraud risk decisions
 
 ## Key Findings
-- [Add 2–3 bullet points summarizing what your analysis found once complete]
+- - 73.6% of fraudulent transactions are under $100, suggesting deliberate card testing behavior
+- Fraudulent transactions average $122.21 vs $88.29 for legitimate ones — a 38% difference
+- Fraud occurs evenly across all time periods with no peak hours, making time-based detection unreliable
 
 ## Dataset
 - Source: [Credit Card Fraud Detection — Kaggle (MLG-ULB)](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
