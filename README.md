@@ -1,3 +1,5 @@
+![Fraud vs Legitimate Transactions](chart1_fraud_vs_legit.png)
+
 # Credit Card Fraud Detection
 
 EDA of 284,000+ credit card transactions to understand fraud patterns using Python and Pandas.
